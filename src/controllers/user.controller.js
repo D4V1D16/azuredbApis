@@ -8,7 +8,8 @@ export const getPersons = async (req, res) => {
         res.status(200).json(rows);
     } catch(err){
         res.status(500).json({ message: "Ocurrio un error al buscar usuarios",
-        error: err.message});   
+        error: err});   
+        
     }
 }
 export const getSinglePerson = async (req, res) => {
