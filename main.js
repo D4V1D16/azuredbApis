@@ -10,9 +10,7 @@ import wholeInvoiceRoute from './src/routes/getWholeInvoice.routes.js';
 import ping from './src/routes/ping.js';
 const app = express();
 
-app.use(cors({
-    origin: 'https://iacommerceapi.azurewebsites.net/'
-}));
+app.use(cors());
 
 
 app.use(express.json())
